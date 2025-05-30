@@ -8,20 +8,21 @@ import pickle
 
 # 1. Prepare your corpus
 corpus = [
-    "Abhishek commitment to affordable education wasn't just a business strategy—it was his life's mission. Over the years, iNeuron has helped over 1.5 million students from 34+ countries, providing them with the skills they need to succeed in today's competitive job market. Many of these students, like Abhishek himself, came from disadvantaged backgrounds. They saw iNeuron as a lifeline—an opportunity to rise above their circumstances.",
-    "In 2022, iNeuron was acquired by PhysicsWallah in a deal worth ₹250 crore. While this acquisition was a significant milestone, Abhishek remained focused on his mission. Even after the acquisition, iNeuron continued to offer some of the most affordable and accessible tech courses in the world.",
-    "deep learning is a branch of machine learning",
-    "natural language processing is a field of AI",
-    "AI is the future",
-    "I enjoy teaching AI",
-    "students love AI projects",
-    "learning new things is exciting",
-    "learning new things is fun",
-    "learning new things is rewarding",
-    "learning new things is enjoyable",
-    "teaching AI is rewarding",
-    "learning new things is enjoyable",
+    "The sunrise over the mountains painted the sky with brilliant shades of orange and pink.",
+    "Machine learning algorithms are transforming industries by enabling smarter decision making.",
+    "Reading books regularly can improve vocabulary and critical thinking skills.",
+    "The city park is a popular place for families to enjoy picnics and outdoor games.",
+    "Renewable energy sources like wind and solar are essential for a sustainable future.",
+    "Cooking new recipes at home is a fun way to explore different cultures and flavors.",
+    "The art museum features exhibitions from both local and international artists.",
+    "Learning to play a musical instrument enhances creativity and patience.",
+    "Astronauts train for years before embarking on missions to the International Space Station.",
+    "Good communication is key to building strong relationships in both personal and professional life.",
+    "Gardening is a relaxing hobby that can also provide fresh fruits and vegetables.",
+    "Online courses make it possible for people to learn new skills from anywhere in the world.",
+    "Practicing mindfulness meditation helps reduce stress and increase focus.",
 ]
+
 
 # 2. Tokenization
 tokenizer = Tokenizer()
@@ -80,4 +81,4 @@ def predict_next_word(seed_text, num_words=5):
     return seed_text
 
 # Example usage
-print(predict_next_word("natural language is", num_words=5))
+print(predict_next_word("Machine learning", num_words=5))
